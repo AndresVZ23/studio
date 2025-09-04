@@ -23,15 +23,15 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
   };
 
   return (
-    <header className="flex flex-col md:flex-row items-center gap-8 bg-card p-6 sm:p-8 rounded-xl shadow-lg relative border border-border">
+    <header className="flex flex-col md:flex-row items-center gap-8 bg-card p-6 sm:p-8 rounded-xl shadow-lg relative border border-primary/50">
        <div className="absolute top-4 right-4 flex gap-2">
         <Button variant="outline" size="icon" onClick={toggleLanguage}>
           {language === 'es' ? 'EN' : 'ES'}
           <span className="sr-only">Change language</span>
         </Button>
         <Button variant="outline" size="icon" onClick={toggleTheme}>
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-accent-foreground" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-accent-foreground" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </div>

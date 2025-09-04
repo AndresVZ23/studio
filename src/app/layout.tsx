@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { AppProvider } from '@/context/app-context';
 
 export const metadata: Metadata = {
-  title: 'Dual Folio | Abel Valle',
+  title: 'Abel Valle | Software Engineer',
   description: 'Portafolio profesional bilingüe de Abel Andrés Valle Zuta.',
 };
 
