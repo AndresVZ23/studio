@@ -1,3 +1,5 @@
+"use client";
+
 import type { FC } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import type { PortfolioData } from '@/lib/portfolio-data';

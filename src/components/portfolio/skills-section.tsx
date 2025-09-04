@@ -1,3 +1,5 @@
+"use client";
+
 import type { FC } from 'react';
 import { BrainCircuit, BadgeCheck } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';

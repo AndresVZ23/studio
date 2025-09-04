@@ -1,3 +1,5 @@
+"use client";
+
 import type { FC, ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 import { useApp } from '@/context/app-context';

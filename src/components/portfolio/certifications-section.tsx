@@ -1,3 +1,5 @@
+"use client";
+
 import type { FC } from 'react';
 import { Award, Star } from 'lucide-react';
 import { Section } from './section';
