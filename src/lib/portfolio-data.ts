@@ -56,18 +56,18 @@ export const portfolioData = {
     }
   ],
   certifications: [
-    { name: "Google UX Design", issuer: "Google Cloud", year: "2024" },
-    { name: "Machine Learning with TensorFlow on Google Cloud", issuer: "Google", year: "2023" },
-    { name: "Introduction to MongoDB", issuer: "MongoDB", year: "2023" },
-    { name: "Python for Everybody", issuer: "University of Michigan", year: "2023" },
-    { name: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy", year: "2023" },
-    { name: "Excel Proficient Specialist", issuer: "Cibertec", year: "2017" },
-    { name: "Microsoft Office Proficient Specialist", issuer: "Cibertec", year: "2017" },
-    { name: "Ciberseguridad e IoT", issuer: "Universidad de los Andes", year: "2024" },
-    { name: "IBM Cybersecurity Analyst", issuer: "IBM", year: "2024" },
-    { name: "Artificial Intelligence & Software Development", issuer: "Universidad de los Andes", year: "2025" },
-    { name: "Databases for Data Scientists", issuer: "University of Colorado Boulder", year: "2025" },
-    { name: "Building LLM Applications with Prompt Engineering", issuer: "NVIDIA", year: "2025" }
+    { name: "Google UX Design", issuer: "Google Cloud", year: "2024", logo: "https://picsum.photos/100/100" },
+    { name: "Machine Learning with TensorFlow on Google Cloud", issuer: "Google", year: "2023", logo: "https://picsum.photos/100/100" },
+    { name: "Introduction to MongoDB", issuer: "MongoDB", year: "2023", logo: "https://picsum.photos/100/100" },
+    { name: "Python for Everybody", issuer: "University of Michigan", year: "2023", logo: "https://picsum.photos/100/100" },
+    { name: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy", year: "2023", logo: "https://picsum.photos/100/100" },
+    { name: "Excel Proficient Specialist", issuer: "Cibertec", year: "2017", logo: "https://picsum.photos/100/100" },
+    { name: "Microsoft Office Proficient Specialist", issuer: "Cibertec", year: "2017", logo: "https://picsum.photos/100/100" },
+    { name: "Ciberseguridad e IoT", issuer: "Universidad de los Andes", year: "2024", logo: "https://picsum.photos/100/100" },
+    { name: "IBM Cybersecurity Analyst", issuer: "IBM", year: "2024", logo: "https://picsum.photos/100/100" },
+    { name: "Artificial Intelligence & Software Development", issuer: "Universidad de los Andes", year: "2025", logo: "https://picsum.photos/100/100" },
+    { name: "Databases for Data Scientists", issuer: "University of Colorado Boulder", year: "2025", logo: "https://picsum.photos/100/100" },
+    { name: "Building LLM Applications with Prompt Engineering", issuer: "NVIDIA", year: "2025", logo: "https://picsum.photos/100/100" }
   ],
   languages: [
     { lang: { es: "Español", en: "Spanish" }, level: { es: "Nativo", en: "Native" } },
