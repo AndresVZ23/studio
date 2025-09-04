@@ -1,15 +1,38 @@
 import type { FC } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import type { PortfolioData } from '@/lib/portfolio-data';
-import { Github, Mail, MapPin, Phone } from 'lucide-react';
+import { Github, Mail, MapPin, Phone, Moon, Sun } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useApp } from '@/context/app-context';
 
 type HeroSectionProps = {
   data: PortfolioData['personal'];
 };
 
 export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
+  const { language, setLanguage, theme, setTheme } = useApp();
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'es' ? 'en' : 'es');
+  };
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
-    <header className="flex flex-col md:flex-row items-center gap-8 bg-card p-6 sm:p-8 rounded-xl shadow-sm">
+    <header className="flex flex-col md:flex-row items-center gap-8 bg-card p-6 sm:p-8 rounded-xl shadow-sm relative">
+       <div className="absolute top-4 right-4 flex gap-2">
+        <Button variant="outline" size="icon" onClick={toggleLanguage}>
+          {language === 'es' ? 'EN' : 'ES'}
+          <span className="sr-only">Change language</span>
+        </Button>
+        <Button variant="outline" size="icon" onClick={toggleTheme}>
+          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </div>
       <Avatar className="size-32 border-4 border-primary">
         <AvatarImage src={data.profileImage} alt={data.name} data-ai-hint="professional headshot" />
         <AvatarFallback>{data.shortName.charAt(0)}{data.shortName.split(' ')[1]?.charAt(0)}</AvatarFallback>
