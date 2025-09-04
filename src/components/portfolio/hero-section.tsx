@@ -23,7 +23,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
   };
 
   return (
-    <header className="flex flex-col md:flex-row items-center gap-8 bg-card p-6 sm:p-8 rounded-xl shadow-sm relative">
+    <header className="flex flex-col md:flex-row items-center gap-8 bg-card p-6 sm:p-8 rounded-xl shadow-lg relative border border-border">
        <div className="absolute top-4 right-4 flex gap-2">
         <Button variant="outline" size="icon" onClick={toggleLanguage}>
           {language === 'es' ? 'EN' : 'ES'}
@@ -41,7 +41,6 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
       </Avatar>
       <div className="text-center md:text-left flex-1">
         <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">{data.name}</h1>
-        <p className="text-xl text-muted-foreground font-headline">{data.shortName}</p>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm">
           <a href={`mailto:${data.email}`} className="flex items-center gap-2 hover:text-primary transition-colors justify-center sm:justify-start">
             <Mail className="size-4" />

@@ -17,6 +17,7 @@ export const portfolioData = {
       role: { es: "Practicante de RPA y WebMaster", en: "RPA Intern & WebMaster" },
       company: "CENTRUM PUCP",
       period: "Ago 2024 – Feb 2025",
+      image: "https://picsum.photos/600/400",
       tasks: [
         { es: "Capacitación en UI Path Studio y StudioX.", en: "Training in UI Path Studio and StudioX." },
         { es: "Planeación, desarrollo, pruebas y automatización de procesos (“Envío de Certificados”).", en: "Planning, development, testing, and process automation ('Certificate Sending')." },
@@ -29,6 +30,7 @@ export const portfolioData = {
       role: { es: "Practicante de Ingeniería de Software", en: "Software Engineer Intern" },
       company: "Software Development Company",
       period: "Marzo 2025 – Ago 2025",
+      image: "https://picsum.photos/600/400",
       tasks: [
         { es: "Corrección, optimización y desarrollo de nuevos requerimientos de la web “Compras”.", en: "Correction, optimization, and development of new requirements for the 'Compras' website." },
         { es: "Desarrollo de la nueva versión del proyecto “Envío de Notificaciones”.", en: "Development of the new version of the 'Notification Sending' project." },
@@ -42,13 +44,15 @@ export const portfolioData = {
     {
       degree: { es: "Ingeniería de Software", en: "Software Engineering" },
       institution: "Universidad Peruana de Ciencias Aplicadas (UPC)",
-      period: "Marzo 2022 – Presente"
+      period: "Marzo 2022 – Presente",
+      image: "https://picsum.photos/600/300"
     },
     {
       degree: { es: "Inglés como lengua extranjera", en: "English as a foreign language" },
       institution: "Instituto Cultural Peruano Norteamericano (ICPNA)",
       period: "Enero 2011 – Febrero 2022",
-      description: { es: "Programa completo niños + adultos (Básico, Intermedio, Avanzado)", en: "Complete program for children + adults (Basic, Intermediate, Advanced)"}
+      description: { es: "Programa completo niños + adultos (Básico, Intermedio, Avanzado)", en: "Complete program for children + adults (Basic, Intermediate, Advanced)"},
+      image: "https://picsum.photos/600/300"
     }
   ],
   certifications: [

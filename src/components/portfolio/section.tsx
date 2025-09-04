@@ -18,7 +18,7 @@ export const Section: FC<SectionProps> = ({ titleEs, titleEn, icon, children, cl
 
   return (
     <section className={cn("space-y-6", className)}>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 border-b border-border pb-4">
         <div className="text-primary">{icon}</div>
         <h2 className="text-3xl font-bold font-headline text-foreground">
           {title}
