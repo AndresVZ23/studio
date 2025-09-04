@@ -12,7 +12,7 @@ type CertificationsSectionProps = {
 
 export const CertificationsSection: FC<CertificationsSectionProps> = ({ data }) => {
   return (
-    <Section titleEs="Vitrina de Trofeos" titleEn="Trophy Case" icon={<Trophy className="size-8" />}>
+    <Section titleEs="Certificaciones" titleEn="Certifications" icon={<Trophy className="size-8" />}>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {data.map((cert, index) => (
           <Card key={index} className="group bg-card border-primary/20 hover:border-primary/60 transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center shadow-lg hover:shadow-primary/20">

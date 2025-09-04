@@ -20,9 +20,6 @@ export const ProfileSection: FC<ProfileSectionProps> = ({ data }) => {
       <Card>
         <CardContent className="p-6">
           <div>
-            <h3 className="font-bold text-lg mb-2 font-headline text-primary">
-              {language === 'es' ? 'Español' : 'English'}
-            </h3>
             <p className="text-muted-foreground leading-relaxed">{currentProfile}</p>
           </div>
         </CardContent>
