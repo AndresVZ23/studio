@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import type { PortfolioData } from '@/lib/portfolio-data';
 import { useApp } from '@/context/app-context';
+import { Section } from './section';
 
 type SkillsSectionProps = {
   data: PortfolioData['skills'];
@@ -15,13 +16,11 @@ export const SkillsSection: FC<SkillsSectionProps> = ({ data }) => {
   const { language } = useApp();
 
   return (
-    <section className="space-y-6">
-      <div className="flex items-center gap-4">
-        <div className="text-primary"><BrainCircuit className="size-8" /></div>
-        <h2 className="text-3xl font-bold font-headline text-foreground">
-          {language === 'es' ? 'Habilidades' : 'Skills'}
-        </h2>
-      </div>
+    <Section
+      titleEs="Habilidades"
+      titleEn="Skills"
+      icon={<BrainCircuit className="size-8" />}
+    >
       <div className="grid lg:grid-cols-2 gap-8">
         <Card>
           <CardHeader>
@@ -58,6 +57,6 @@ export const SkillsSection: FC<SkillsSectionProps> = ({ data }) => {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </Section>
   );
 };
