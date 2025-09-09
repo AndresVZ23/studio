@@ -52,6 +52,12 @@ const nextConfig: NextConfig = {
         hostname: 'mydnadigital.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
