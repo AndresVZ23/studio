@@ -19,6 +19,7 @@ export const EducationSection: FC<EducationSectionProps> = ({ data }) => {
       <div className="grid md:grid-cols-2 gap-6">
         {data.map((edu, index) => (
           <Card key={index} className="flex flex-col">
+            {/* Cambiar Imagen */}
             <Image src={edu.image} alt={edu.institution} width={600} height={300} className="rounded-t-lg object-cover w-full h-48" data-ai-hint="university campus" />
             <CardContent className="p-6 flex-grow">
               <h3 className="font-bold text-lg font-headline">{edu.degree[language]}</h3>

@@ -21,6 +21,7 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({ data }) => {
         {data.map((exp, index) => (
           <div key={index} className="grid md:grid-cols-3 gap-6 items-start">
             <div className="md:col-span-1">
+              {/* Cambiar Imagen */}
               <Image src={exp.image} alt={exp.company} width={600} height={400} className="rounded-lg object-cover aspect-[3/2]" data-ai-hint="office building" />
             </div>
             <div className="md:col-span-2">

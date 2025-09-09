@@ -36,6 +36,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
         </Button>
       </div>
       <Avatar className="size-32 border-4 border-primary">
+        {/* Cambiar Imagen */}
         <AvatarImage src={data.profileImage} alt={data.name} data-ai-hint="professional headshot" />
         <AvatarFallback>{data.shortName.charAt(0)}{data.shortName.split(' ')[1]?.charAt(0)}</AvatarFallback>
       </Avatar>
