@@ -46,6 +46,12 @@ const nextConfig: NextConfig = {
         hostname: 'repositorio.pucp.edu.pe',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'mydnadigital.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
