@@ -24,18 +24,18 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
 
   return (
     <header className="flex flex-col md:flex-row items-center gap-8 bg-card p-6 sm:p-8 rounded-xl shadow-lg relative border border-primary/50">
-       <div className="absolute top-4 right-4 flex gap-2">
-        <Button variant="outline" size="icon" onClick={toggleLanguage}>
+       <div className="absolute top-4 right-4 flex items-center gap-2">
+        <Button variant="outline" size="icon" onClick={toggleLanguage} className="w-10 h-10 text-xs">
           {language === 'es' ? 'EN' : 'ES'}
           <span className="sr-only">Change language</span>
         </Button>
-        <Button variant="outline" size="icon" onClick={toggleTheme}>
+        <Button variant="outline" size="icon" onClick={toggleTheme} className="w-10 h-10">
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-accent-foreground" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-accent-foreground" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </div>
-      <Avatar className="size-32 border-4 border-primary">
+      <Avatar className="size-32 border-4 border-primary mt-12 md:mt-0">
         {/* Cambiar Imagen */}
         <AvatarImage src={data.profileImage} alt={data.name} data-ai-hint="professional headshot" />
         <AvatarFallback>{data.shortName.charAt(0)}{data.shortName.split(' ')[1]?.charAt(0)}</AvatarFallback>
