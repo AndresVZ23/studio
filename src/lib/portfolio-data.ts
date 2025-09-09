@@ -1,4 +1,5 @@
 
+
 export const portfolioData = {
   personal: {
     name: "Abel Andrés Valle Zuta",
@@ -7,7 +8,6 @@ export const portfolioData = {
     email: "abelandresvallez@gmail.com",
     github: "AndresVZ23",
     address: "La Molina, Lima, Perú",
-    profileImage: "https://picsum.photos/seed/1/200/200"
   },
   profile: {
     es: "Soy un estudiante de Ingeniería de Software, busco activamente oportunidades para consolidar mi experiencia profesional. Me caracterizo por liderazgo, trabajo en equipo, compromiso con el aprendizaje continuo, responsabilidad y constante desarrollo de nuevas habilidades. Estoy entusiasmado y listo para aportar de manera sustancial a cualquier proyecto.",
@@ -18,7 +18,6 @@ export const portfolioData = {
       role: { es: "Practicante de RPA y WebMaster", en: "RPA Intern & WebMaster" },
       company: "CENTRUM PUCP",
       period: "Ago 2024 – Feb 2025",
-      image: "https://picsum.photos/seed/2/600/400",
       tasks: [
         { es: "Capacitación en UI Path Studio y StudioX.", en: "Training in UI Path Studio and StudioX." },
         { es: "Planeación, desarrollo, pruebas y automatización de procesos (“Envío de Certificados”).", en: "Planning, development, testing, and process automation ('Certificate Sending')." },
@@ -31,7 +30,6 @@ export const portfolioData = {
       role: { es: "Practicante de Ingeniería de Software", en: "Software Engineer Intern" },
       company: "CENTRUM PUCP",
       period: "Marzo 2025 – Ago 2025",
-      image: "https://picsum.photos/seed/3/600/400",
       tasks: [
         { es: "Corrección, optimización y desarrollo de nuevos requerimientos de la web “Compras”.", en: "Correction, optimization, and development of new requirements for the 'Compras' website." },
         { es: "Desarrollo de la nueva versión del proyecto “Envío de Notificaciones”.", en: "Development of the new version of the 'Notification Sending' project." },
@@ -46,29 +44,27 @@ export const portfolioData = {
       degree: { es: "Ingeniería de Software", en: "Software Engineering" },
       institution: "Universidad Peruana de Ciencias Aplicadas (UPC)",
       period: "Marzo 2022 – Presente",
-      image: "https://picsum.photos/seed/4/600/300"
     },
     {
       degree: { es: "Inglés como lengua extranjera", en: "English as a foreign language" },
       institution: "Instituto Cultural Peruano Norteamericano (ICPNA)",
       period: "Enero 2011 – Febrero 2022",
       description: { es: "Programa completo niños + adultos (Básico, Intermedio, Avanzado)", en: "Complete program for children + adults (Basic, Intermediate, Advanced)"},
-      image: "https://picsum.photos/seed/5/600/300"
     }
   ],
   certifications: [
-    { name: "Google UX Design", issuer: "Google", year: "2024", logo: "https://picsum.photos/seed/c1/100/100" },
-    { name: "Machine Learning with TensorFlow on Google Cloud", issuer: "Google", year: "2023", logo: "https://picsum.photos/seed/c2/100/100" },
-    { name: "Introduction to MongoDB", issuer: "MongoDB", year: "2023", logo: "https://picsum.photos/seed/c3/100/100" },
-    { name: "Python for Everybody", issuer: "University of Michigan", year: "2023", logo: "https://picsum.photos/seed/c4/100/100" },
-    { name: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy", year: "2023", logo: "https://picsum.photos/seed/c5/100/100" },
-    { name: "Excel Proficient Specialist", issuer: "Cibertec", year: "2017", logo: "https://picsum.photos/seed/c6/100/100" },
-    { name: "Microsoft Office Proficient Specialist", issuer: "Cibertec", year: "2017", logo: "https://picsum.photos/seed/c7/100/100" },
-    { name: "Ciberseguridad e IoT", issuer: "Universidad de los Andes", year: "2024", logo: "https://picsum.photos/seed/c8/100/100" },
-    { name: "IBM Cybersecurity Analyst", issuer: "IBM", year: "2024", logo: "https://picsum.photos/seed/c9/100/100" },
-    { name: "Artificial Intelligence & Software Development", issuer: "Universidad de los Andes", year: "2025", logo: "https://picsum.photos/seed/c10/100/100" },
-    { name: "Databases for Data Scientists", issuer: "University of Colorado Boulder", year: "2025", logo: "https://picsum.photos/seed/c11/100/100" },
-    { name: "Building LLM Applications with Prompt Engineering", issuer: "NVIDIA", year: "2025", logo: "https://picsum.photos/seed/c12/100/100" }
+    { name: "Google UX Design", issuer: "Google", year: "2024" },
+    { name: "Machine Learning with TensorFlow on Google Cloud", issuer: "Google", year: "2023" },
+    { name: "Introduction to MongoDB", issuer: "MongoDB", year: "2023" },
+    { name: "Python for Everybody", issuer: "University of Michigan", year: "2023" },
+    { name: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy", year: "2023" },
+    { name: "Excel Proficient Specialist", issuer: "Cibertec", year: "2017" },
+    { name: "Microsoft Office Proficient Specialist", issuer: "Cibertec", year: "2017" },
+    { name: "Ciberseguridad e IoT", issuer: "Universidad de los Andes", year: "2024" },
+    { name: "IBM Cybersecurity Analyst", issuer: "IBM", year: "2024" },
+    { name: "Artificial Intelligence & Software Development", issuer: "Universidad de los Andes", year: "2025" },
+    { name: "Databases for Data Scientists", issuer: "University of Colorado Boulder", year: "2025" },
+    { name: "Building LLM Applications with Prompt Engineering", issuer: "NVIDIA", year: "2025" }
   ],
   languages: [
     { lang: { es: "Español", en: "Spanish" }, level: { es: "Nativo", en: "Native" } },

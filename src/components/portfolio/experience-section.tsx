@@ -1,3 +1,4 @@
+
 "use client";
 
 import type { FC } from 'react';
@@ -7,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { PortfolioData } from '@/lib/portfolio-data';
 import { useApp } from '@/context/app-context';
 import Image from 'next/image';
+import placeholderImages from '@/lib/placeholder-images.json';
 
 type ExperienceSectionProps = {
   data: PortfolioData['experience'];
@@ -22,7 +24,7 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({ data }) => {
           <div key={index} className="grid md:grid-cols-3 gap-6 items-start">
             <div className="md:col-span-1">
               {/* Cambiar Imagen */}
-              <Image src={exp.image} alt={exp.company} width={600} height={400} className="rounded-lg object-cover aspect-[3/2]" data-ai-hint="office building" />
+              <Image src={placeholderImages.experience[index].image} alt={exp.company} width={600} height={400} className="rounded-lg object-cover aspect-[3/2]" data-ai-hint="office building" />
             </div>
             <div className="md:col-span-2">
               <Card className="overflow-hidden h-full">

@@ -1,0 +1,36 @@
+
+{
+  "personal": {
+    "profileImage": "https://picsum.photos/seed/1/200/200"
+  },
+  "experience": [
+    {
+      "image": "https://picsum.photos/seed/2/600/400"
+    },
+    {
+      "image": "https://picsum.photos/seed/3/600/400"
+    }
+  ],
+  "education": [
+    {
+      "image": "https://picsum.photos/seed/4/600/300"
+    },
+    {
+      "image": "https://picsum.photos/seed/5/600/300"
+    }
+  ],
+  "certifications": [
+    { "logo": "https://picsum.photos/seed/c1/100/100" },
+    { "logo": "https://picsum.photos/seed/c2/100/100" },
+    { "logo": "https://picsum.photos/seed/c3/100/100" },
+    { "logo": "https://picsum.photos/seed/c4/100/100" },
+    { "logo": "https://picsum.photos/seed/c5/100/100" },
+    { "logo": "https://picsum.photos/seed/c6/100/100" },
+    { "logo": "https://picsum.photos/seed/c7/100/100" },
+    { "logo": "https://picsum.photos/seed/c8/100/100" },
+    { "logo": "https://picsum.photos/seed/c9/100/100" },
+    { "logo": "https://picsum.photos/seed/c10/100/100" },
+    { "logo": "https://picsum.photos/seed/c11/100/100" },
+    { "logo": "https://picsum.photos/seed/c12/100/100" }
+  ]
+}

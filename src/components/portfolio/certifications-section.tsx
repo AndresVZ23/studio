@@ -1,3 +1,4 @@
+
 "use client";
 
 import type { FC } from 'react';
@@ -7,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { PortfolioData } from '@/lib/portfolio-data';
 import Image from 'next/image';
 import { useApp } from '@/context/app-context';
+import placeholderImages from '@/lib/placeholder-images.json';
 
 type CertificationsSectionProps = {
   data: PortfolioData['certifications'];
@@ -27,7 +29,7 @@ export const CertificationsSection: FC<CertificationsSectionProps> = ({ data }) 
                 <CardHeader className="items-center">
                 <div className="p-2 bg-primary/10 rounded-full mb-2 group-hover:bg-primary/20 transition-colors flex items-center justify-center size-20 sm:size-24">
                     {/* Cambiar Imagen */}
-                    <Image src={cert.logo} alt={`${cert.issuer} logo`} width={80} height={80} className="rounded-full object-contain" data-ai-hint="company logo" />
+                    <Image src={placeholderImages.certifications[index].logo} alt={`${cert.issuer} logo`} width={80} height={80} className="rounded-full object-contain" data-ai-hint="company logo" />
                 </div>
                 <CardTitle className="text-sm sm:text-base font-bold leading-tight">{cert.name}</CardTitle>
                 </CardHeader>
