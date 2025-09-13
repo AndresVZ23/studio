@@ -76,6 +76,12 @@ const nextConfig: NextConfig = {
         hostname: 'marketplace.crowdstrike.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'brand.umich.edu',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
