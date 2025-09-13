@@ -100,6 +100,12 @@ const nextConfig: NextConfig = {
         hostname: 'substackcdn.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'nccasc.colorado.edu',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
