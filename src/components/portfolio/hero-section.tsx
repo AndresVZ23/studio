@@ -33,7 +33,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
             <span className="sr-only">Change language</span>
           </Button>
           <Button variant="outline" size="icon" onClick={toggleTheme} className="size-8 sm:size-10">
-            <Sun className="h-[1.1rem] w-[1.1rem] sm:h-[1.2rem] sm:w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-accent-foreground" />
+            <Sun className="h-[1.1rem] w-[1.1rem] sm:h-[1.2rem] sm:w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-foreground" />
             <Moon className="absolute h-[1.1rem] w-[1.1rem] sm:h-[1.2rem] sm:w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-accent-foreground" />
             <span className="sr-only">Toggle theme</span>
           </Button>
@@ -41,7 +41,6 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
         
         <div className="flex flex-col items-center md:flex-row md:items-start gap-8 mt-16 md:mt-0">
           <Avatar className="size-28 sm:size-32 border-4 border-primary flex-shrink-0">
-            {/* Cambiar Imagen */}
             <AvatarImage src={placeholderImages.personal.profileImage} alt={data.name} data-ai-hint="professional headshot" />
             <AvatarFallback>{data.shortName.charAt(0)}{data.shortName.split(' ')[1]?.charAt(0)}</AvatarFallback>
           </Avatar>
