@@ -22,14 +22,16 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({ data }) => {
       <div className="grid md:grid-cols-2 gap-6">
         {data.map((exp, index) => (
           <Card key={index} className="flex flex-col overflow-hidden">
-            <Image 
-              src={placeholderImages.experience[index].image} 
-              alt={exp.company} 
-              width={600} 
-              height={300} 
-              className="rounded-t-lg object-cover w-full h-48"
-              data-ai-hint="company office"
-            />
+            <div className="bg-muted rounded-t-lg">
+              <Image 
+                src={placeholderImages.experience[index].image} 
+                alt={exp.company} 
+                width={600} 
+                height={300} 
+                className="rounded-t-lg object-contain w-full h-48"
+                data-ai-hint="company office"
+              />
+            </div>
             <CardContent className="p-6 flex-grow flex flex-col">
               <div className="flex-grow">
                 <h3 className="font-bold text-lg font-headline">{exp.role[language]}</h3>
