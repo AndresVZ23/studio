@@ -4,7 +4,7 @@
 import type { FC } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import type { PortfolioData } from '@/lib/portfolio-data';
-import { Github, Mail, MapPin, Phone, Moon, Sun } from 'lucide-react';
+import { Github, Mail, MapPin, Phone, Moon, Sun, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useApp } from '@/context/app-context';
 import placeholderImages from '@/lib/placeholder-images.json';
@@ -47,7 +47,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
 
           <div className="text-center md:text-left flex-1 pt-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-headline font-bold text-foreground break-words">{data.name}</h1>
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 text-sm">
               <a href={`mailto:${data.email}`} className="flex items-center gap-2 hover:text-primary transition-colors justify-center sm:justify-start">
                 <Mail className="size-4" />
                 <span>{data.email}</span>
@@ -59,6 +59,10 @@ export const HeroSection: FC<HeroSectionProps> = ({ data }) => {
               <a href={`https://github.com/${data.github}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors justify-center sm:justify-start">
                 <Github className="size-4" />
                 <span>{data.github}</span>
+              </a>
+               <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors justify-center sm:justify-start">
+                <Linkedin className="size-4" />
+                <span>LinkedIn</span>
               </a>
               <div className="flex items-center gap-2 text-muted-foreground justify-center sm:justify-start">
                 <MapPin className="size-4" />

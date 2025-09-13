@@ -6,7 +6,8 @@ export const portfolioData = {
     phone: "(+51) 989 095 048",
     email: "abelandresvallez@gmail.com",
     github: "AndresVZ23",
-    address: "La Molina, Lima, Perú",
+    linkedin: "https://www.linkedin.com/in/abel-andr%C3%A9s-valle-zuta",
+    address: "Perú",
   },
   profile: {
     es: "Soy un estudiante de Ingeniería de Software, busco activamente oportunidades para consolidar mi experiencia profesional. Me caracterizo por liderazgo, trabajo en equipo, compromiso con el aprendizaje continuo, responsabilidad y constante desarrollo de nuevas habilidades. Estoy entusiasmado y listo para aportar de manera sustancial a cualquier proyecto.",
@@ -61,7 +62,7 @@ export const portfolioData = {
     { name: "Machine Learning with TensorFlow on Google Cloud", issuer: "Google", year: "2024" },
     { name: { es: "Ciberseguridad e IoT", en: "Cybersecurity & IoT" }, issuer: "Universidad de los Andes", year: "2024" },
     { name: "IBM Cybersecurity Analyst", issuer: "IBM", year: "2024" },
-    { name: "Databases for Data Scientists", issuer: "University of Colorado Boulder", year: "2025" },
+    { name: { es: "Bases de Datos para Científicos de Datos", en: "Databases for Data Scientists" }, issuer: "University of Colorado Boulder", year: "2025" },
     { name: { es: "Inteligencia Artificial y Desarrollo de Software", en: "Artificial Intelligence & Software Development" }, issuer: "Universidad de los Andes", year: "2025" },
     { name: "Building LLM Applications with Prompt Engineering", issuer: "NVIDIA", year: "2025" }
   ],
