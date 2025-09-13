@@ -94,6 +94,12 @@ const nextConfig: NextConfig = {
         hostname: 'shop.undergroundshirts.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'substackcdn.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
