@@ -82,6 +82,12 @@ const nextConfig: NextConfig = {
         hostname: 'brand.umich.edu',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
