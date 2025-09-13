@@ -106,6 +106,12 @@ const nextConfig: NextConfig = {
         hostname: 'nccasc.colorado.edu',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.nvidia.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
