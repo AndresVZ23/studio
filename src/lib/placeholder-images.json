@@ -20,17 +20,17 @@
     }
   ],
   "certifications": [
-    { "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" },
-    { "logo": "https://marketplace.crowdstrike.com/content/dam/crowdstrike/marketplace/en-us/images/Googlecloud_icon_square.png" },
     { "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivXCkaET9d6hHwTXDxxR8Lw5Vql5cUqrkAg&s" },
+    { "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivXCkaET9d6hHwTXDxxR8Lw5Vql5cUqrkAg&s" },
+    { "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEKdDZxHHVtWkFbNsKmnVTqrYOxH1BOSsCyA&s" },
     { "logo": "https://brand.umich.edu/assets/brand/style-guide/logo-guidelines/U-M_Logo-Hex.png" },
     { "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXgr6EloEzQvW-BhWGCAlsSfl2rulHcUCMJg&s" },
-    { "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEKdDZxHHVtWkFbNsKmnVTqrYOxH1BOSsCyA&s" },
-    { "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEKdDZxHHVtWkFbNsKmnVTqrYOxH1BOSsCyA&s" },
+    { "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" },
+    { "logo": "https://marketplace.crowdstrike.com/content/dam/crowdstrike/marketplace/en-us/images/Googlecloud_icon_square.png" },
     { "logo": "https://play-lh.googleusercontent.com/p5kx3-NyUZZxXgZI8Ig7-nnBFdoEM56ofy-giU0qA4tt90fIkaA32pM9EDmzOvxD-EY" },
     { "logo": "https://substackcdn.com/image/fetch/$s_!aFzv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa27a43b7-f1ec-4586-9898-5f43c9b7cdbf_1000x1000.jpeg" },
-    { "logo": "https://play-lh.googleusercontent.com/p5kx3-NyUZZxXgZI8Ig7-nnBFdoEM56ofy-giU0qA4tt90fIkaA32pM9EDmzOvxD-EY" },
     { "logo": "https://nccasc.colorado.edu/sites/default/files/styles/max_325x325/public/2018-10/cu-logo.png?itok=oZTTb-_r" },
+    { "logo": "https://play-lh.googleusercontent.com/p5kx3-NyUZZxXgZI8Ig7-nnBFdoEM56ofy-giU0qA4tt90fIkaA32pM9EDmzOvxD-EY" },
     { "logo": "https://media.licdn.com/dms/image/v2/D560BAQGV36q2EowSyw/company-logo_100_100/company-logo_100_100/0/1724881581208/nvidia_logo?e=1760572800&v=beta&t=qfVGTpoQImUMdeeo2lWLsS3fRzhDDIRewJ9uTGkbNoE" }
   ]
 }
