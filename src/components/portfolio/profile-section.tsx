@@ -20,7 +20,7 @@ export const ProfileSection: FC<ProfileSectionProps> = ({ data }) => {
       <Card>
         <CardContent className="p-6">
           <div>
-            <p className="text-muted-foreground leading-relaxed">{currentProfile}</p>
+            <p className="text-muted-foreground leading-relaxed text-justify">{currentProfile}</p>
           </div>
         </CardContent>
       </Card>
