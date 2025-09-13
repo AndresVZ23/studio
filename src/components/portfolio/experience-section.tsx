@@ -22,7 +22,7 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({ data }) => {
       <div className="grid md:grid-cols-2 gap-6">
         {data.map((exp, index) => (
           <Card key={index} className="flex flex-col overflow-hidden">
-            <div className="bg-muted rounded-t-lg">
+            <div className="bg-white rounded-t-lg">
               <Image 
                 src={placeholderImages.experience[index].image} 
                 alt={exp.company} 
