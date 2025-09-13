@@ -28,11 +28,11 @@ export const CertificationsSection: FC<CertificationsSectionProps> = ({ data }) 
                 const certName = typeof cert.name === 'string' ? cert.name : cert.name[language];
                 return (
                 <Card key={index} className="group bg-card border-primary/20 hover:border-primary/60 transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center shadow-lg hover:shadow-primary/20">
-                    <CardHeader className="items-center">
+                    <CardHeader className="items-center w-full">
                     <div className="p-2 bg-primary/10 rounded-full mb-2 group-hover:bg-primary/20 transition-colors flex items-center justify-center size-20 sm:size-24">
                         <Image src={placeholderImages.certifications[index].logo} alt={`${cert.issuer} logo`} width={80} height={80} className="rounded-full object-contain" data-ai-hint="company logo" />
                     </div>
-                    <CardTitle className="text-sm sm:text-base font-bold leading-tight">{certName}</CardTitle>
+                    <CardTitle className="text-sm sm:text-base font-bold leading-tight h-10 sm:h-12 flex items-center justify-center">{certName}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-between">
                     <p className="text-xs text-muted-foreground">{cert.issuer}</p>
