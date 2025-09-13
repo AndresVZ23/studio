@@ -21,25 +21,32 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({ data }) => {
     <Section titleEs="Experiencia Profesional" titleEn="Professional Experience" icon={<Briefcase className="size-8" />}>
       <div className="space-y-8">
         {data.map((exp, index) => (
-          <div key={index} className="grid md:grid-cols-3 gap-6 items-start">
-            <div className="md:col-span-1">
-              {/* Cambiar Imagen */}
-              <Image src={placeholderImages.experience[index].image} alt={exp.company} width={600} height={400} className="rounded-lg object-cover aspect-[3/2]" data-ai-hint="office building" />
-            </div>
-            <div className="md:col-span-2">
-              <Card className="overflow-hidden h-full">
-                <CardHeader>
+          <Card key={index} className="overflow-hidden">
+            <CardHeader>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+                <div className="bg-white p-2 rounded-md border flex-shrink-0">
+                  {/* Cambiar Imagen */}
+                  <Image 
+                    src={placeholderImages.experience[index].image} 
+                    alt={`${exp.company} logo`} 
+                    width={80} 
+                    height={80} 
+                    className="object-contain"
+                    data-ai-hint="company logo"
+                  />
+                </div>
+                <div className="flex-grow">
                   <CardTitle className="font-headline text-xl">{exp.role[language]}</CardTitle>
                   <p className="text-muted-foreground pt-1">{exp.company} | {exp.period}</p>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    {exp.tasks.map((task, i) => <li key={i}>{task[language]}</li>)}
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                {exp.tasks.map((task, i) => <li key={i}>{task[language]}</li>)}
+              </ul>
+            </CardContent>
+          </Card>
         ))}
       </div>
     </Section>
