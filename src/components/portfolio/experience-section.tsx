@@ -4,7 +4,7 @@
 import type { FC } from 'react';
 import { Briefcase } from 'lucide-react';
 import { Section } from './section';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import type { PortfolioData } from '@/lib/portfolio-data';
 import { useApp } from '@/context/app-context';
 import Image from 'next/image';
@@ -19,32 +19,25 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({ data }) => {
 
   return (
     <Section titleEs="Experiencia Profesional" titleEn="Professional Experience" icon={<Briefcase className="size-8" />}>
-      <div className="space-y-8">
+      <div className="grid md:grid-cols-2 gap-6">
         {data.map((exp, index) => (
-          <Card key={index} className="overflow-hidden">
-            <CardHeader>
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
-                <div className="bg-white p-2 rounded-md border flex-shrink-0">
-                  {/* Cambiar Imagen */}
-                  <Image 
-                    src={placeholderImages.experience[index].image} 
-                    alt={`${exp.company} logo`} 
-                    width={80} 
-                    height={80} 
-                    className="object-contain"
-                    data-ai-hint="company logo"
-                  />
-                </div>
-                <div className="flex-grow">
-                  <CardTitle className="font-headline text-xl">{exp.role[language]}</CardTitle>
-                  <p className="text-muted-foreground pt-1">{exp.company} | {exp.period}</p>
-                </div>
+          <Card key={index} className="flex flex-col overflow-hidden">
+            <Image 
+              src={placeholderImages.experience[index].image} 
+              alt={exp.company} 
+              width={600} 
+              height={300} 
+              className="rounded-t-lg object-cover w-full h-48"
+              data-ai-hint="company office"
+            />
+            <CardContent className="p-6 flex-grow flex flex-col">
+              <div className="flex-grow">
+                <h3 className="font-bold text-lg font-headline">{exp.role[language]}</h3>
+                <p className="text-muted-foreground">{exp.company} | {exp.period}</p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground mt-4">
+                  {exp.tasks.map((task, i) => <li key={i}>{task[language]}</li>)}
+                </ul>
               </div>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                {exp.tasks.map((task, i) => <li key={i}>{task[language]}</li>)}
-              </ul>
             </CardContent>
           </Card>
         ))}
