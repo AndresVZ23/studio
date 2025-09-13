@@ -59,10 +59,10 @@ export const portfolioData = {
     { name: "Introduction to MongoDB", issuer: "MongoDB", year: "2023" },
     { name: "Google UX Design", issuer: "Google", year: "2023" },
     { name: "Machine Learning with TensorFlow on Google Cloud", issuer: "Google", year: "2024" },
-    { name: "Ciberseguridad e IoT", issuer: "Universidad de los Andes", year: "2024" },
+    { name: { es: "Ciberseguridad e IoT", en: "Cybersecurity & IoT" }, issuer: "Universidad de los Andes", year: "2024" },
     { name: "IBM Cybersecurity Analyst", issuer: "IBM", year: "2024" },
     { name: "Databases for Data Scientists", issuer: "University of Colorado Boulder", year: "2025" },
-    { name: "Inteligencia Artificial y Desarrollo de Software", issuer: "Universidad de los Andes", year: "2025" },
+    { name: { es: "Inteligencia Artificial y Desarrollo de Software", en: "Artificial Intelligence & Software Development" }, issuer: "Universidad de los Andes", year: "2025" },
     { name: "Building LLM Applications with Prompt Engineering", issuer: "NVIDIA", year: "2025" }
   ],
   languages: [
