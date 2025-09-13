@@ -1,5 +1,4 @@
 
-
 export const portfolioData = {
   personal: {
     name: "Abel Andrés Valle Zuta",
@@ -53,17 +52,17 @@ export const portfolioData = {
     }
   ],
   certifications: [
-    { name: "Google UX Design", issuer: "Google", year: "2024" },
-    { name: "Machine Learning with TensorFlow on Google Cloud", issuer: "Google", year: "2023" },
-    { name: "Introduction to MongoDB", issuer: "MongoDB", year: "2023" },
-    { name: "Python for Everybody", issuer: "University of Michigan", year: "2023" },
-    { name: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy", year: "2023" },
-    { name: "Excel Proficient Specialist", issuer: "Cibertec", year: "2017" },
     { name: "Microsoft Office Proficient Specialist", issuer: "Cibertec", year: "2017" },
+    { name: "Excel Proficient Specialist", issuer: "Cibertec", year: "2017" },
+    { name: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy", year: "2023" },
+    { name: "Python for Everybody", issuer: "University of Michigan", year: "2023" },
+    { name: "Introduction to MongoDB", issuer: "MongoDB", year: "2023" },
+    { name: "Google UX Design", issuer: "Google", year: "2023" },
+    { name: "Machine Learning with TensorFlow on Google Cloud", issuer: "Google", year: "2024" },
     { name: "Ciberseguridad e IoT", issuer: "Universidad de los Andes", year: "2024" },
     { name: "IBM Cybersecurity Analyst", issuer: "IBM", year: "2024" },
-    { name: "Artificial Intelligence & Software Development", issuer: "Universidad de los Andes", year: "2025" },
     { name: "Databases for Data Scientists", issuer: "University of Colorado Boulder", year: "2025" },
+    { name: "Artificial Intelligence & Software Development", issuer: "Universidad de los Andes", year: "2025" },
     { name: "Building LLM Applications with Prompt Engineering", issuer: "NVIDIA", year: "2025" }
   ],
   languages: [
