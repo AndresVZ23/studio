@@ -35,7 +35,7 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({ data }) => {
             <CardContent className="p-6 flex-grow flex flex-col">
               <div className="flex-grow">
                 <h3 className="font-bold text-lg font-headline">{exp.role[language]}</h3>
-                <p className="text-muted-foreground">{exp.company} | {exp.period}</p>
+                <p className="text-muted-foreground">{exp.company} | {exp.period[language]}</p>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground mt-4">
                   {exp.tasks.map((task, i) => <li key={i}>{task[language]}</li>)}
                 </ul>

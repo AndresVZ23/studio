@@ -6,7 +6,7 @@ export const portfolioData = {
     phone: "(+51) 989 095 048",
     email: "abelandresvallez@gmail.com",
     github: "AndresVZ23",
-    linkedin: "https://www.linkedin.com/in/abel-andr%C3%A9s-valle-zuta",
+    linkedin: "www.linkedin.com/in/abel-andrés-valle-zuta",
     address: "Perú",
   },
   profile: {
@@ -17,7 +17,7 @@ export const portfolioData = {
     {
       role: { es: "Practicante de RPA y WebMaster", en: "RPA Intern & WebMaster" },
       company: "CENTRUM PUCP",
-      period: "Ago 2024 – Feb 2025",
+      period: { es: "Ago 2024 – Feb 2025", en: "Aug 2024 – Feb 2025" },
       tasks: [
         { es: "Capacitación en UI Path Studio y StudioX.", en: "Training in UI Path Studio and StudioX." },
         { es: "Planeación, desarrollo, pruebas y automatización de procesos (“Envío de Certificados”).", en: "Planning, development, testing, and process automation ('Certificate Sending')." },
@@ -29,7 +29,7 @@ export const portfolioData = {
     {
       role: { es: "Practicante de Ingeniería de Software", en: "Software Engineer Intern" },
       company: "CENTRUM PUCP",
-      period: "Marzo 2025 – Ago 2025",
+      period: { es: "Marzo 2025 – Ago 2025", en: "March 2025 – Aug 2025" },
       tasks: [
         { es: "Corrección, optimización y desarrollo de nuevos requerimientos de la web “Compras”.", en: "Correction, optimization, and development of new requirements for the 'Compras' website." },
         { es: "Desarrollo de la nueva versión del proyecto “Envío de Notificaciones”.", en: "Development of the new version of the 'Notification Sending' project." },
@@ -43,12 +43,12 @@ export const portfolioData = {
     {
       degree: { es: "Ingeniería de Software", en: "Software Engineering" },
       institution: "Universidad Peruana de Ciencias Aplicadas (UPC)",
-      period: "Marzo 2022 – Presente",
+      period: { es: "Marzo 2022 – Presente", en: "March 2022 – Present" },
     },
     {
       degree: { es: "Inglés como lengua extranjera", en: "English as a foreign language" },
       institution: "Instituto Cultural Peruano Norteamericano (ICPNA)",
-      period: "Enero 2011 – Febrero 2022",
+      period: { es: "Enero 2011 – Febrero 2022", en: "Jan 2011 – Feb 2022" },
       description: { es: "Programa completo niños + adultos (Básico, Intermedio, Avanzado)", en: "Complete program for children + adults (Basic, Intermediate, Advanced)"},
     }
   ],
