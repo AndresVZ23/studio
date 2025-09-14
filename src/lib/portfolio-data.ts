@@ -6,7 +6,7 @@ export const portfolioData = {
     phone: "(+51) 989 095 048",
     email: "abelandresvallez@gmail.com",
     github: "AndresVZ23",
-    linkedin: "www.linkedin.com/in/abel-andrés-valle-zuta",
+    linkedin: "https://www.linkedin.com/in/abel-andres-valle-zuta",
     address: "Perú",
   },
   profile: {
